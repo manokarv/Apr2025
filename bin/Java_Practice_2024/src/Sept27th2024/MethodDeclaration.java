@@ -1,0 +1,70 @@
+package Sept27th2024;
+
+public class MethodDeclaration 
+{
+	public static void main(String[] args) 
+	{
+		//addNumber(10, 20);
+		
+		//System.out.println(addNumber(10, 20)); //private method code printing
+		
+		//displayMessage();
+		
+		//System.out.println(quotientOfNumbers(15,5)); //public method code printing
+		
+		//System.out.println(productOfNumbers(12,23,4,6,7));
+		System.out.println(performCalculation(15,6,'-'));
+		
+
+	}
+	
+	private static void displayMessage() //private method
+	{
+		System.out.println("This is my first method");
+	}
+	
+	private static int addNumber(int a, int b) //private method
+	{
+		return a+b;
+	}
+	
+	static int productOfNumbers(int x, int y) // default method
+	{
+		return x*y;
+	}
+	
+	public static double quotientOfNumbers(double a, double b)
+	{
+		return a/b;
+	}
+	
+	static double productOfNumbers(int...a)
+	{
+		double product =1;
+		for(int i =0;i<a.length;i++)
+		{
+			product = product*1;
+		}
+		return product;
+	}
+	
+	//Number is  super class of int,byte,short,double,float,long.
+	
+	public static Number performCalculation(int a, int b, char op)
+	{
+		//Switch case can be used to return the values in JDK 17
+		
+		return switch (op)
+		{
+		case '+' -> a+b;
+		case '-' -> a-b;
+		case '*' -> a*b;
+		case '/' -> a/b;
+		case '%' -> a%b;
+		default -> -1;
+			
+		};
+				
+	}
+
+}

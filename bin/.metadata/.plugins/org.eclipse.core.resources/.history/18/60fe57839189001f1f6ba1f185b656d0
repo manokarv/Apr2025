@@ -1,0 +1,23 @@
+package Sept27th2024;
+
+public class MethodDeclaration 
+{
+	public static void main(String[] args) 
+	{
+		//addNumber(10, 20);
+		System.out.println(addNumber(10, 20));
+		displayMessage();
+
+	}
+	
+	private static void displayMessage()
+	{
+		System.out.println("This is my first method");
+	}
+	
+	private static int addNumber(int a, int b)
+	{
+		return a+b;
+	}
+
+}
